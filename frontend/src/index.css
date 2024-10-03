@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  transition: all 200ms eas-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* for body */
+.scrollbar-rounded {
+  @apply overflow-y-auto;
+}
+
+.scrollbar-rounded::-webkit-scrollbar {
+  width: 4px;
+  height: 50px;
+}
+
+.scrollbar-rounded::-webkit-scrollbar-thumb {
+  @apply bg-purple-500 rounded-full;
+}
+
+.bg-url {
+  background-image: url('/notfound.gif');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
